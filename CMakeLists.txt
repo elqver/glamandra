@@ -16,5 +16,5 @@ find_package(OpenGL REQUIRED)
 include_directories(${OPENGL_INCLUDE_DIRS})
 
 # Add executable and link GLFW, OpenGL, and GLAD
-add_executable(my_executable main.c)
+add_executable(my_executable main.c shader.c)
 target_link_libraries(my_executable glfw OpenGL::GL GLAD)
